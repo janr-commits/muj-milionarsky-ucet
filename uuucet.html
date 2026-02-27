@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Internetové bankovnictví</title>
+<style>
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+  background:#f3f6fb;
+}
+
+/* Horní modrý panel */
+.header{
+  background:linear-gradient(90deg,#0d47a1,#1565c0);
+  color:white;
+  padding:25px 40px;
+}
+.header h1{
+  margin:0;
+  font-size:22px;
+}
+.greeting{
+  margin-top:8px;
+  font-size:15px;
+  opacity:0.9;
+}
+.search{
+  margin-top:15px;
+}
+.search input{
+  padding:10px;
+  width:300px;
+  border-radius:8px;
+  border:none;
+}
+
+/* Obsah */
+.container{
+  padding:40px;
+}
+
+.card{
+  background:white;
+  border-radius:15px;
+  padding:25px;
+  width:420px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom:25px;
+}
+
+.account-title{
+  font-size:14px;
+  color:gray;
+}
+
+.account-number{
+  font-size:13px;
+  color:#888;
+  margin-top:4px;
+}
+
+.balance{
+  font-size:36px;
+  font-weight:bold;
+  margin-top:15px;
+  color:#16a34a;
+}
+
+.buttons{
+  margin-top:15px;
+}
+
+.buttons button{
+  padding:8px 14px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  background:white;
+  cursor:pointer;
+  margin-right:8px;
+}
+
+.buttons button:hover{
+  background:#f0f0f0;
+}
+
+/* Sekce pod tím */
+.section-title{
+  margin-top:40px;
+  margin-bottom:15px;
+  font-weight:bold;
+  font-size:18px;
+}
+.small-box{
+  background:white;
+  border-radius:12px;
+  padding:15px;
+  width:180px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  display:inline-block;
+  margin-right:15px;
+}
+.small-box h3{
+  margin:0;
+  font-size:14px;
+  color:gray;
+}
+.small-box p{
+  margin:5px 0 0 0;
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Přehled</h1>
+  <div class="greeting">Dobrý večer, Jane.</div>
+  <div class="search">
+    <input type="text" placeholder="Co pro vás mám najít?">
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Hlavní účet -->
+  <div class="card">
+    <div class="account-title">Běžný účet</div>
+    <div class="account-number">5279653043 / 0800</div>
+    <div class="balance">241 548 211,19 Kč</div>
+
+    <div class="buttons">
+      <button>Zaplatit</button>
+      <button>Historie</button>
+      <button>Trvalé příkazy</button>
+      <button>Nová platba</button>
+    </div>
+  </div>
+
+  <!-- Sekce jak se vám daří -->
+  <div class="section-title">Jak se Vám daří</div>
+
+  <div class="small-box">
+    <h3>Výdaje tento měsíc</h3>
+    <p>58 908 Kč</p>
+  </div>
+
+  <div class="small-box">
+    <h3>Příjmy</h3>
+    <p>1 223 795 Kč</p>
+  </div>
+
+  <div class="small-box">
+    <h3>Investice</h3>
+    <p>4 257 760 Kč</p>
+  </div>
+
+</div>
+
+</body>
+</html>
